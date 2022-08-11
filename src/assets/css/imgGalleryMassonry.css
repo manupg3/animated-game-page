@@ -1,0 +1,5 @@
+.imgGalleryMassonry:hover{
+transform: scale(1.1);
+border: 4px solid orange;
+transition: ease 0.5s;
+}

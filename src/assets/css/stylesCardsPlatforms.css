@@ -1,0 +1,70 @@
+
+.container-cards-platforms {
+    position : relative;
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-warp : warp;
+    padding : 30px;  
+    
+  }
+  
+  .container-cards-platforms .card-platforms {
+    position: relative;
+    max-width : 400px;
+    height : 215px;  
+    background-color : #fff;
+    margin : 30px 40px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(255, 166, 0, 0.356);
+    transition : 0.3s ease-in-out;
+    border-radius : 8px;
+  }
+  .container-cards-platforms .card-platforms:hover {
+    height : 350px;   
+    box-shadow : 0 5px 20px orange;
+ 
+
+  }
+  
+  
+  .container-cards-platforms .card-platforms .image-card-platforms {
+    position : relative;
+    width : 360px;
+    height : 260px;
+    
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container-cards-platforms .card-platforms .image-card-platforms img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container-cards-platforms .card-platforms .content-card-platforms {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container-cards-platforms .card-platforms:hover .content-card-platforms {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }

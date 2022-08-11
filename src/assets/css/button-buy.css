@@ -1,0 +1,332 @@
+.container-button {
+    position:absolute;
+    left: -70px;
+    top:-270px;
+}
+.container-button a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid black; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+}
+.container-button a:hover {
+    color: white;
+}
+.container-button a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+.container-button a:before{
+    content:"";
+    position: absolute;
+    left:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:black;
+    box-shadow: 5px -8px 0 black,
+                5px  8px 0 black;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button a:hover::before{
+    width: 50%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 black,
+                5px 0 0 black;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button a:after{
+    content:"";
+    position: absolute;
+    right:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:black;
+    box-shadow: -5px -8px 0 black,
+                -5px  8px 0 black;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button a:hover:after{
+    width: 50%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 black,
+                -5px 0 0 black;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button a:hover{
+
+    color: white;
+    transition-delay: 0.5s;
+}
+.container-button a span{
+    position: relative;
+    z-index: 100;
+}
+
+.container-button-body {
+    position:relative;
+  
+}
+.container-button-body a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid orange; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: orange
+    ;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 166, 0, 0.256));
+    transition: 0.5s;
+}
+.container-button-body a:hover {
+    color: white;
+}
+.container-button-body a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+.container-button-body a:before{
+    content:"";
+    position: absolute;
+    left:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: 5px -8px 0 orange,
+                5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-body a:hover::before{
+    width: 50%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 orange,
+                5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-body a:after{
+    content:"";
+    position: absolute;
+    right:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: -5px -8px 0 orange,
+                -5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-body a:hover:after{
+    width: 50%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 orange,
+                -5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-body a:hover{
+
+    color: white;
+    transition-delay: 0.5s;
+}
+.container-button-body a span{
+    position: relative;
+    z-index: 100;
+}
+
+.container-button-discount {
+    position:relative;
+  
+}
+.container-button-discount a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white
+    ;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 166, 0, 0.256));
+    transition: 0.5s;
+}
+.container-button-discount a:hover {
+    color: orange !important;
+}
+.container-button-discount a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+.container-button-discount a:before{
+    content:"";
+    position: absolute;
+    left:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:white;
+    box-shadow: 5px -8px 0 white,
+                5px  8px 0 white;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-discount a:hover::before{
+    width: 50%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 white,
+                5px 0 0 white;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-discount a:after{
+    content:"";
+    position: absolute;
+    right:-20px;
+    top:27px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:white;
+    box-shadow: -5px -8px 0 white,
+                -5px  8px 0 white;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-discount a:hover:after{
+    width: 50%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 white,
+                -5px 0 0 white;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-discount a:hover{
+
+    color: orange;
+    transition-delay: 0.5s;
+}
+.container-button-discount a span{
+    position: relative;
+    z-index: 100;
+}
+
+/* header */
+.container-button-header {
+    position:relative;
+  
+}
+.container-button-header a{
+    position: relative;
+    display: inline-block;
+    padding: 7px 15px;
+    border: 2px solid orange; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: orange
+    ;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 166, 0, 0.256));
+    transition: 0.5s;
+}
+.container-button-header a:hover {
+    color: white !important;
+}
+.container-button-discount a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+.container-button-header a:before{
+    content:"";
+    position: absolute;
+    left:-20px;
+    top:20px;
+    transform: translateY(-52%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: 5px -8px 0 orange,
+                5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-header a:hover::before{
+    width: 50%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 orange,
+                5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-header a:after{
+    content:"";
+    position: absolute;
+    right:-20px;
+    top:20px;
+    transform: translateY(-52%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: -5px -8px 0 orange,
+                -5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-header a:hover:after{
+    width: 50%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 orange,
+                -5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-header a:hover{
+
+    color: white;
+    transition-delay: 0.5s;
+}
+.container-button-header a span{
+    position: relative;
+    z-index: 100;
+}
