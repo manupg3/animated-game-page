@@ -93,4 +93,25 @@ h3 {
     color: #ffffff;
   }
 }
-
+@media screen and (max-width: 767px){
+  .container-cards-complete{
+    flex-direction: column;
+}
+.card1{
+display: block;
+position: relative;
+width: 500px;
+max-width: 500px !important;
+background-color: #f2f8f9;
+border-radius: 4px;
+padding: 32px 24px;
+margin: 12px;
+text-decoration: none;
+z-index: 0;
+box-shadow: 6px 1px 10px 1px rgb(194 194 194 / 49%);
+overflow: hidden;
+&:hover:before {
+  transform: scale(31);
+}
+}
+}

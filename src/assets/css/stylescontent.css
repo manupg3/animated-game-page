@@ -2,6 +2,13 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Share+Tech&display=swap');
 
+
+button.image-gallery-icon.image-gallery-play-button {
+    margin-left: 42px;
+}
+button.image-gallery-icon.image-gallery-play-button:hover {
+    color: orange;
+}
 .st-tittle-discount{
     font-family: 'Share Tech', sans-serif !important;
     font-size: 3rem !important;
@@ -436,7 +443,7 @@ p.body-cards-text.card-text {
 }
 
 @media screen and (max-width:767px) {
-   
+  
     .div-why-us{
         padding-top: 15%;
         padding-bottom: 20%;
@@ -447,7 +454,7 @@ p.body-cards-text.card-text {
 
     }
     .st-title{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .st-text{
         font-size: 1.1rem;
@@ -516,3 +523,7 @@ p.body-cards-text.card-text {
     }
 
 }
+@media screen and (max-width:1045px) {
+
+}
+

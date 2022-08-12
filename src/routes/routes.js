@@ -22,7 +22,6 @@ const RoutesApp = () => (
         <Route exact path='/xbox-one' element={<XboxOnePage />} />
         <Route exact path='/windows' element={<WindowsPage />} />
         <Route exact path='/how-it-works' element={<HowItWorks />} />
-        <Route exact path='/contact' element={<ContactPage />} />
 
         <Route element={<Page404 />} />
     </Routes>

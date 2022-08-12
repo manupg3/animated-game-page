@@ -57,9 +57,7 @@ const logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Quantum_Br
           </LinkContainer>
      </NavDropdown.Item>
       </NavDropdown>
-      <LinkContainer to="/contact">
-      <Nav.Link className="nav-link cmr hover-underline-animation">Contact</Nav.Link>
-    </LinkContainer>
+
     </Nav>
     <Nav>
   
