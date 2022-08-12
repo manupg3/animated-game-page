@@ -283,34 +283,34 @@ const HomePage = () => {
     <>
 
       <Page>
-        <SliderHome />
-        <div className='container-cards-complete' style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
+        {/* <SliderHome /> */}
+        {/* <div className='container-cards-complete' style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
               <CardsHoverComplete title="Xbox One Series S/X" description="An unforgettable experience, live with XBOX ONE Series S/X" linkCard="/xbox-one"/>
               <CardsHoverComplete title="Playstation 4/5"  description="Next Generation Graphics, Only in PLAYSTATION" linkCard="/playstation"/>
               <CardsHoverComplete title="Windows 10/11"  description="Get all the performance with your latest generation GAMER PC" linkCard="/windows" />
               </div>
         <div className="div-cards">
-       </div>
-        <History />
-        <div className='sliding-text-infinite'>
+       </div> */}
+        {/* <History /> */}
+        {/* <div className='sliding-text-infinite'>
         <div class="marquee">
                 <span>FUTURE - TIME - DESTINY - CHOOSE - LIVE &nbsp;&nbsp;&nbsp;</span>
             </div>
             <div class="marquee marquee2">
                 <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
             </div>
-        </div>  
-        <div className='text-center' style={{ marginBottom: "40px" }}>
+        </div>   */}
+        {/* <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>Latest Generation Graphics
           </motion.h1>
-        </div>
-        < div style={{marginBottom:"10%" }}>
+        </div> */}
+        {/* < div style={{marginBottom:"10%" }}>
           <MyGallery  images={imagesGallerySliderHome} />
-        </div>
+        </div> */}
 
-        <Gameplay />
-        <motion.div
+        {/* <Gameplay /> */}
+        {/* <motion.div
           ref={ref}
           animate={Opacity}
           initial="hidden"
@@ -318,30 +318,30 @@ const HomePage = () => {
 
         >
         
-        </motion.div>
+        </motion.div> */}
       </Page>
-      <div className='sliding-text-infinite'>
+       <div className='sliding-text-infinite'>
         <div class="marquee">
                 <span>BEST RATED GAME OF 2020 &nbsp;&nbsp;&nbsp;</span>
             </div>
             <div class="marquee marquee2">
                 <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
             </div>
-        </div>  
-      <div style={{padding: "40px"}}>
+        </div>   
+       <div style={{padding: "40px"}}>
       <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>A Game Of The Year
           </motion.h1>
-        </div>
-      <MyWrapper />
+        </div> 
+       <MyWrapper /> 
       </div>
-      <div style={{background:"orange",paddingTop:"45px", display:"flex",justifyContent:"space-evenly", height:"150px", marginRight:"3%", marginLeft:"3%", marginBottom:"3%", borderRadius:"6px",boxShadow:"0px 0px 10px 1px orange"}}>
+     <div style={{background:"orange",paddingTop:"45px", display:"flex",justifyContent:"space-evenly", height:"150px", marginRight:"3%", marginLeft:"3%", marginBottom:"3%", borderRadius:"6px",boxShadow:"0px 0px 10px 1px orange"}}>
       <h1 className='st-tittle-discount' style={{color:"white"}}>¡Get a Unique Discount!</h1>
       <div className='container-button-discount' style={{float:"right"}}>
                   <a className='' href="#"><span>¡Get Discount Now!</span></a>
                 </div>                          
-       </div>
+       </div> 
     </>
 
   );

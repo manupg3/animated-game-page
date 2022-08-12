@@ -16,8 +16,8 @@ button.image-gallery-icon.image-gallery-play-button:hover {
 .sliding-text-infinite{
     position: relative;
     display: block;
-    width: 96%;
-    margin-left: 50px;
+    width: 80%;
+    padding-left: 50px;
     height: 140px;
     overflow: hidden;
 }
@@ -86,6 +86,7 @@ button.image-gallery-icon.image-gallery-left-nav:hover {
     box-shadow: 1px 1px 10px 1px orange;
 }
 h1.st-title-graphics {
+    text-transform: uppercase;
     font-family: 'Share Tech', sans-serif;
     border-bottom: none !important;
     padding: 0px;
@@ -441,9 +442,19 @@ p.body-cards-text.card-text {
     color: black !important;
     border: 1.5px solid black !important;   
 }
-
+@media screen and (max-width:1140px) {
+    h1.st-title-graphics{
+        margin-left: 3px ;
+        margin-right: 3px ;
+        text-transform: uppercase;
+    }
+}
 @media screen and (max-width:767px) {
   
+    .st-tittle-discount
+    {
+        display: none ;
+    }
     .div-why-us{
         padding-top: 15%;
         padding-bottom: 20%;

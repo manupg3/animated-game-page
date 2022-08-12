@@ -19,7 +19,7 @@ const App = () => {
                 <Header className="header"/>
 
                     <RoutesApp />
-                    <FooterPage />
+                <FooterPage /> 
                 </Router>
         </div>
     );

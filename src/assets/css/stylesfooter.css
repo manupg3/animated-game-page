@@ -4,6 +4,9 @@
     padding-bottom: 1%;
     border-top: 1px solid #6c757d45;
 }
+.row{
+    margin-right: 0px;
+}
 .principal-footer {
     padding-top: 2%;
     padding-bottom: 0%;
