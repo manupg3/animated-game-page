@@ -136,10 +136,13 @@ const History = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>A Unique</motion.h1>
-                {/* <ul className='dynamics-text'>
-                  <li><span>History</span></li>
-
-                </ul> */}
+              <motion.h1
+                  ref={ref}
+                  animate={opacityAndScale}
+                  initial="hidden"
+                  style={{color:"orange",marginLeft:"13px"}}
+                  variants={opacityAndScaleVariants}
+                  className='st-title static-text' >History</motion.h1>
               </div>
               <motion.p
                 ref={ref}
@@ -294,15 +297,15 @@ const HomePage = () => {
               </div>
         <div className="div-cards">
        </div> */}
-        {/* <History /> */}
-        {/* <div className='sliding-text-infinite'>
+         <History /> 
+         <div className='sliding-text-infinite'>
         <div class="marquee">
                 <span>FUTURE - TIME - DESTINY - CHOOSE - LIVE &nbsp;&nbsp;&nbsp;</span>
             </div>
             <div class="marquee marquee2">
                 <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
             </div>
-        </div>   */}
+        </div>   
          <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>Latest Generation Graphics
