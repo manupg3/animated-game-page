@@ -136,10 +136,10 @@ const History = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>A Unique</motion.h1>
-                <ul className='dynamics-text'>
+                {/* <ul className='dynamics-text'>
                   <li><span>History</span></li>
 
-                </ul>
+                </ul> */}
               </div>
               <motion.p
                 ref={ref}
@@ -217,10 +217,10 @@ const Gameplay = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>Other Way To</motion.h1>
-                <ul className='dynamics-text'>
+                {/* <ul className='dynamics-text'>
                   <li style={{marginTop: "0px"}}><span>Play</span></li>
 
-                </ul>
+                </ul> */}
               </div>
               <motion.p
                 ref={ref}
