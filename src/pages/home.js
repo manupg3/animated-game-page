@@ -217,10 +217,13 @@ const Gameplay = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>Other Way To</motion.h1>
-                {/* <ul className='dynamics-text'>
-                  <li style={{marginTop: "0px"}}><span>Play</span></li>
-
-                </ul> */}
+               <motion.h1
+                  ref={ref}
+                  animate={opacityAndScale}
+                  initial="hidden"
+                  style={{color:"orange",marginLeft:"13px"}}
+                  variants={opacityAndScaleVariants}
+                  className='st-title static-text' >Play</motion.h1>
               </div>
               <motion.p
                 ref={ref}
@@ -300,17 +303,17 @@ const HomePage = () => {
                 <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
             </div>
         </div>   */}
-        {/* <div className='text-center' style={{ marginBottom: "40px" }}>
+         <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>Latest Generation Graphics
           </motion.h1>
-        </div> */}
-        {/* < div style={{marginBottom:"10%" }}>
+        </div> 
+         < div style={{marginBottom:"10%" }}>
           <MyGallery  images={imagesGallerySliderHome} />
-        </div> */}
+        </div> 
 
-        {/* <Gameplay /> */}
-        {/* <motion.div
+         <Gameplay /> 
+         <motion.div
           ref={ref}
           animate={Opacity}
           initial="hidden"
@@ -318,9 +321,9 @@ const HomePage = () => {
 
         >
         
-        </motion.div> */}
+        </motion.div> 
       </Page>
-       <div className='sliding-text-infinite'>
+       <div className='sliding-text-infinite' style={{marginBottom:"-50px"}}>
         <div class="marquee">
                 <span>BEST RATED GAME OF 2020 &nbsp;&nbsp;&nbsp;</span>
             </div>

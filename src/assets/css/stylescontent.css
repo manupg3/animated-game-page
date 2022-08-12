@@ -450,7 +450,9 @@ p.body-cards-text.card-text {
     }
 }
 @media screen and (max-width:767px) {
-  
+  .st-title{
+    font-size: 2rem !important;
+  }
     .st-tittle-discount
     {
         display: none ;
