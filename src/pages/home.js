@@ -289,7 +289,7 @@ const HomePage = () => {
     <>
 
       <Page>
-        {/* <SliderHome /> */}
+        <SliderHome /> 
          <div className='container-cards-complete' style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
               <CardsHoverComplete title="Xbox One Series S/X" description="An unforgettable experience, live with XBOX ONE Series S/X" linkCard="/xbox-one"/>
               <CardsHoverComplete title="Playstation 4/5"  description="Next Generation Graphics, Only in PLAYSTATION" linkCard="/playstation"/>

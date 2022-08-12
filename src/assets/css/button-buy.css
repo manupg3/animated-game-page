@@ -1,7 +1,9 @@
 .container-button {
     position:absolute;
-    left: -70px;
-    top:-270px;
+    left: 0;
+    margin-left: -10%;
+    top:0;
+    margin-top: -30%;
 }
 .container-button a{
     position: relative;
@@ -329,4 +331,34 @@
 .container-button-header a span{
     position: relative;
     z-index: 100;
+}
+
+@media screen and (max-width: 950px){
+    .container-button {
+        margin-top: -23%;
+        margin-left: -12%;
+    }
+    .container-button a{
+        position: relative;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 8px 14px;
+        border: 2px solid black; 
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: black;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+        transition: 0.5s;
+    }
+    .container-button a:before{
+        left:-20px;
+        top:20px;
+    }
+    .container-button a:after{
+        right:-20px;
+        top:20px;
+    }
+    
 }
