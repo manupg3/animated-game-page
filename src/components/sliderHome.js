@@ -2,8 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import imgSlider1 from '../assets/img/sliderHome.jpg'
 import  '../assets/css/button-buy.css'
 function SliderHome() {
+
   return (
-    <Carousel fade >
+    <Carousel fade style={{marginTop:"72px"}}>
       <Carousel.Item>
         <img
           className="d-block w-100"
