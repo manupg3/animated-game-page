@@ -225,4 +225,28 @@ $poppins: 'Poppins', sans-serif;
   .hero .overlay .content{
     height: 298px;
   }
+  .hero-xbox .overlay .content h1 {
+    font-size: 40px;
+  }
+  .hero-xbox .overlay .content p{
+    font-size: 15px;
+  }
+  .hero-xbox{
+    height: 200px;
+  }
+  .hero-xbox .overlay .content{
+    height: 298px;
+  }
+  .hero-windows .overlay .content h1 {
+    font-size: 40px;
+  }
+  .hero-windows .overlay .content p{
+    font-size: 15px;
+  }
+  .hero-windows{
+    height: 200px;
+  }
+  .hero.windows .overlay .content{
+    height: 298px;
+  }
 }
