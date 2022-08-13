@@ -6,10 +6,10 @@ $poppins: 'Poppins', sans-serif;
  background: #133A53 url(https://images7.alphacoders.com/970/970508.jpg);
  background-size: cover;
   position: relative;
+  margin-top: 74px;
   display: flex;
   align-items: center;
   justify-content: left;
-  font-family: $poppins;
   height: 400px;
   width: 100%;
   .overlay {
@@ -210,5 +210,19 @@ $poppins: 'Poppins', sans-serif;
   }
   100% {
     transform: scaleX(1);
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero .overlay .content h1 {
+    font-size: 40px;
+  }
+  .hero .overlay .content p{
+    font-size: 15px;
+  }
+  .hero{
+    height: 200px;
+  }
+  .hero .overlay .content{
+    height: 298px;
   }
 }

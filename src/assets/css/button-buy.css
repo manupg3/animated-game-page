@@ -333,6 +333,92 @@
     z-index: 100;
 }
 
+.container-button-cards-platforms {
+    position:relative;
+
+}
+.container-button-cards-platforms a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px solid orange; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: orange;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,  rgba(255, 166, 0, 0.256));
+    transition: 0.5s;
+}
+.container-button-cards-platforms a:hover {
+    color: white !important;
+}
+.container-button-cards-platforms a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+.container-button-cards-platforms a:before{
+    content:"";
+    position: absolute;
+    left:-20px;
+    top:23px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: 5px -8px 0 orange,
+                5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-cards-platforms a:hover::before{
+    width: 50%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 orange,
+                5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-cards-platforms a:after{
+    content:"";
+    position: absolute;
+    right:-20px;
+    top:23px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background:orange;
+    box-shadow: -5px -8px 0 orange,
+                -5px  8px 0 orange;
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.container-button-cards-platforms a:hover:after{
+    width: 50%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 orange,
+                -5px 0 0 orange;
+    transition-delay: 0s,0s,0.5s,1s;
+
+} 
+.container-button-cards-platforms a:hover{
+
+    color: white !important;
+    transition-delay: 0.5s;
+}
+.container-button-cards-platforms a span{
+    position: relative;
+    z-index: 100;
+    font-size: 20px;
+}
+
+
+
+
 @media screen and (max-width: 950px){
     .container-button {
         margin-top: -23%;
