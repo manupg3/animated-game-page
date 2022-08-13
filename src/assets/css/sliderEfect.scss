@@ -259,11 +259,11 @@ $poppins: 'Poppins', sans-serif;
     font-size: 15px;
   }
   .hero-windows{
-    height: 230px;
+    height: 200px;
     margin-top: 78px;
   }
-  .hero.windows .overlay .content{
-    height: 198px !important;
+  .hero-windows .overlay .content{
+    height: 298px !important;
   }
   .hero-windows .overlay:before{
     height: 230px;
