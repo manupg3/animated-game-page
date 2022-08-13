@@ -125,6 +125,9 @@ div#responsive-navbar-nav{
     
 }
 @media screen and (max-width:767px){
+    .hover-underline-animation:hover:after{
+        display: none !important;
+    }
     button.btn-docs.btn.btn-primary {
         font-size: 1rem;
         font-weight: 400;
