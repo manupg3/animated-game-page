@@ -8,7 +8,7 @@ import { useAnimation, motion } from "framer-motion";
 const toRigthVariants = {
   toRigth: { x: 0, transition: { duration: 2, type: 
   "spring", ease: 'easeInOut', delay: 1.7 }, opacity: 1 },
-  hidden: { x: -30, opacity: 0 }
+  hidden: {  opacity: 0 }
 };
 
 
