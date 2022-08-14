@@ -31,7 +31,7 @@ const logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Quantum_Br
     <LinkContainer to="/">
      <Nav.Link className="nav-link hover-underline-animation"  >Home</Nav.Link>
      </LinkContainer>
-     <LinkContainer to="/about">
+     <LinkContainer to="/history">
       <Nav.Link className="nav-link hover-underline-animation"  >History</Nav.Link>
       </LinkContainer>
       <NavDropdown className="nav-links hover-underline-animation" title="Platforms" id="collasible-nav-dropdown">
@@ -52,9 +52,7 @@ const logo='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Quantum_Br
      </NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item > 
-        <LinkContainer to="/how-it-works">
-          <Nav.Link className="nav-link" >How it works?</Nav.Link>
-          </LinkContainer>
+
      </NavDropdown.Item>
       </NavDropdown>
 

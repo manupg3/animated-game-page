@@ -17,7 +17,6 @@ const App = () => {
            
                 <Router>
                 <Header className="header"/>
-
                     <RoutesApp />
                 <FooterPage /> 
                 </Router>

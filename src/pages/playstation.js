@@ -37,18 +37,19 @@ const content = [
 
 const PlaystationPage = () => {
 
-const subtitle = "Watch The Trailer In HD.";
-const titleTabs = ["Know your business","Define the process","We take care"]
-const textTabs = ["we know all the processes of the company","We redefine the processes, to improve the efficiency of each process"
-                 ,"Our specialists will be in charge of directing and controlling the new processes"]
-const labelsChart = ["Management","Profits"];
+const subtitle = "Trailer In HD.";
 
-                
-
-
+              
     return (
 
-        <>  <Page>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+      transition={{ duration: 1.5 }}
+
+     >
+        <Page>
              <section class="hero">
   <div class="overlay">
       <div class="content">
@@ -69,7 +70,7 @@ const labelsChart = ["Management","Profits"];
               </div> *
           
             </Page>
-        </>
+        </motion.div>
     );
 };
 

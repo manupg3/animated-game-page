@@ -37,11 +37,18 @@ const content = [
 
 const XboxOnePage = () => {
 
-const subtitle = "Watch The Trailer In HD.";
+const subtitle = "Trailer In HD.";
 
     return (
 
-        <>  <Page>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+      transition={{ duration: 1.5 }}
+
+     >
+        <Page>
             <section class="hero-xbox">
   <div class="overlay">
       <div class="content">
@@ -64,7 +71,7 @@ const subtitle = "Watch The Trailer In HD.";
           
               </div>
             </Page>
-        </>
+        </motion.div>
     );
 };
 

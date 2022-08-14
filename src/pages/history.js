@@ -1,10 +1,18 @@
 import React from 'react';
 import Page from '../components/pageScrolling';
 import '../assets/css/styleHistory.css'
-const AboutPage = () => {
+import {motion} from 'framer-motion'
+
+const HistoryPage = () => {
 
     return (
-        <>  <Page>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{ duration: 1.5 }}
+
+        >  <Page>
               <div className="about-section">
         <div className="inner-container">
             <h1>History</h1>
@@ -17,8 +25,8 @@ const AboutPage = () => {
            
 
             </Page>
-        </>
+        </motion.div>
     );
 };
 
-export default AboutPage;
+export default HistoryPage;

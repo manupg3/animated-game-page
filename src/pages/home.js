@@ -286,7 +286,13 @@ const HomePage = () => {
 
   return (
 
-    <>
+    <motion.div
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     exit={{opacity:0}}
+     transition={{ duration: 1.5 }}
+
+    >
 
       <Page>
         <SliderHome /> 
@@ -334,7 +340,7 @@ const HomePage = () => {
                 <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
             </div>
         </div>   
-       <div style={{padding: "40px"}}>
+       <div style={{padding: "4vw"}}>
       <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>A Game Of The Year
@@ -348,7 +354,7 @@ const HomePage = () => {
                   <a className='' href="#"><span>¡Get Discount Now!</span></a>
                 </div>                          
        </div> 
-    </>
+    </motion.div>
 
   );
 };

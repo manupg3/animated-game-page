@@ -506,6 +506,7 @@ p.body-cards-text.card-text {
 .title-pages{
     font-family: 'Roboto', sans-serif;
     padding-top: 10px;
+    margin-bottom: 0px;
 }
       
 }

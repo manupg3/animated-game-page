@@ -6,7 +6,6 @@ $poppins: 'Poppins', sans-serif;
  background: #133A53 url(https://images7.alphacoders.com/970/970508.jpg);
  background-size: cover;
   position: relative;
-  margin-top: 74px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -49,7 +48,7 @@ $poppins: 'Poppins', sans-serif;
         background: orange;
         z-index: 3;
         animation: reveal .5s reverse forwards;
-        animation-delay: .5s;
+        animation-delay: 1.6s;
         opacity: 0.6;
         transform-origin:50% 50%;
     }
@@ -64,7 +63,7 @@ $poppins: 'Poppins', sans-serif;
         z-index: 2;
         opacity: 0.3;
         animation: reveal 0.7s reverse forwards;
-        animation-delay: .7s;
+        animation-delay: 1.6s;
         transform-origin: left;
     }
   }
@@ -117,7 +116,7 @@ $poppins: 'Poppins', sans-serif;
            background: orange;
            z-index: 3;
            animation: reveal .5s reverse forwards;
-           animation-delay: .5s;
+           animation-delay: 1.6s;
            opacity: 0.6;
            transform-origin:50% 50%;
        }
@@ -132,7 +131,7 @@ $poppins: 'Poppins', sans-serif;
            z-index: 2;
            opacity: 0.3;
            animation: reveal 0.7s reverse forwards;
-           animation-delay: .7s;
+           animation-delay: 1.6s;
            transform-origin: left;
        }
      }
@@ -183,8 +182,8 @@ $poppins: 'Poppins', sans-serif;
            height: 400px;
            background: orange;
            z-index: 3;
-           animation: reveal .5s reverse forwards;
-           animation-delay: .5s;
+           animation: reveal .6s reverse forwards;
+           animation-delay: 1.6s;
            opacity: 0.6;
            transform-origin:50% 50%;
        }
@@ -198,8 +197,8 @@ $poppins: 'Poppins', sans-serif;
            background: orange;
            z-index: 2;
            opacity: 0.3;
-           animation: reveal 0.7s reverse forwards;
-           animation-delay: .7s;
+           animation: reveal .7s reverse forwards;
+           animation-delay: 1.6s;
            transform-origin: left;
        }
      }

@@ -125,6 +125,9 @@ div#responsive-navbar-nav{
     
 }
 @media screen and (max-width:767px){
+    a.dropdown-item {
+        text-align: center !important;
+    }
     .hover-underline-animation:hover:after{
         display: none !important;
     }
