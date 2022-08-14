@@ -1,18 +1,11 @@
 import React, { useEffect } from 'react';
 import Page from '../components/pageScrolling';
-import TituloPage from '../components/titlePages';
-import Cards from '../components/cards';
 import '../assets/css/stylescontent.css';
 import '../App.css';
 import '../assets/css/styleYoutubeIframe.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAtom, faCircleDollarToSlot, faPlay } from '@fortawesome/free-solid-svg-icons';
-import Whyus from '../components/whyus';
-import Button from 'react-bootstrap/Button';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
-import ProgressBar from 'react-bootstrap/ProgressBar'
-import { useAnimation, motion, useViewportScroll, useTransform } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SliderHome from '../components/sliderHome';
 import { faMicrosoft, faPlaystation, faXbox } from '@fortawesome/free-brands-svg-icons';
@@ -118,7 +111,6 @@ const History = () => {
       Opacity.start("visible");
       toLeft.start("toLeft");
       opacityAndScale.start("opacityAndScale");
-
     }
   }, [toRigth, Opacity, toLeft, opacityAndScale, inView]);
 
@@ -136,11 +128,11 @@ const History = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>A Unique</motion.h1>
-              <motion.h1
+                <motion.h1
                   ref={ref}
                   animate={opacityAndScale}
                   initial="hidden"
-                  style={{color:"orange",marginLeft:"13px"}}
+                  style={{ color: "orange", marginLeft: "13px" }}
                   variants={opacityAndScaleVariants}
                   className='st-title static-text' >History</motion.h1>
               </div>
@@ -187,13 +179,13 @@ const Gameplay = () => {
   const opacityAndScale = useAnimation();
   const [ref, inView] = useInView();
 
+
   useEffect(() => {
     if (inView) {
       toRigth.start("toRigth");
       Opacity.start("visible");
       toLeft.start("toLeft");
       opacityAndScale.start("opacityAndScale");
-
     }
   }, [toRigth, Opacity, toLeft, opacityAndScale, inView]);
 
@@ -202,7 +194,7 @@ const Gameplay = () => {
   return (
     <div className='statistics'>
       <div className="content">
-        <div className="row st-row">
+        <div className="row row-other-way-to-play">
           <motion.div
             ref={ref}
             animate={toLeft}
@@ -212,7 +204,7 @@ const Gameplay = () => {
             <YoutubeEmbed embedId="ruY1eT9bXiw" />
           </motion.div>
           <div className="col-sm st-col" >
-            <div className="st-col-first" style={{marginTop: "-20px"}}>
+            <div className="st-col-first" style={{ marginTop: "-20px" }}>
               <div className="wrapper-titles">
                 <motion.h1
                   ref={ref}
@@ -220,11 +212,11 @@ const Gameplay = () => {
                   initial="hidden"
                   variants={opacityAndScaleVariants}
                   className='st-title static-text'>Other Way To</motion.h1>
-               <motion.h1
+                <motion.h1
                   ref={ref}
                   animate={opacityAndScale}
                   initial="hidden"
-                  style={{color:"orange",marginLeft:"13px"}}
+                  style={{ color: "orange", marginLeft: "13px" }}
                   variants={opacityAndScaleVariants}
                   className='st-title static-text' >Play</motion.h1>
               </div>
@@ -252,6 +244,87 @@ const Gameplay = () => {
     </div>
   );
 };
+const CardsHome = () => {
+
+  const toRigth = useAnimation();
+  const Opacity = useAnimation();
+  const toLeft = useAnimation();
+  const opacityAndScale = useAnimation();
+  const opacityC1 = useAnimation();
+  const opacityC2 = useAnimation();
+  const opacityC3 = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      toRigth.start("toRigth");
+      Opacity.start("visible");
+      toLeft.start("toLeft");
+      opacityAndScale.start("opacityAndScale");
+      opacityC1.start("opacityC1");
+      opacityC2.start("opacityC2");
+      opacityC3.start("opacityC3");
+    }
+  }, [toRigth, Opacity, toLeft, opacityAndScale, opacityC1, opacityC2, opacityC3, inView]);
+
+
+  return(
+    <motion.div className='container-cards-complete'
+    style={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
+    ref={ref}
+    animate={opacityAndScale}
+    initial="hidden"
+    variants={opacityAndScaleVariants}
+  >
+    <CardsHoverComplete title="Xbox One Series S/X" description="An unforgettable experience, live with XBOX ONE Series S/X" linkCard="/xbox-one" />
+    <CardsHoverComplete title="Playstation 4/5" description="Next Generation Graphics, Only in PLAYSTATION" linkCard="/playstation" />
+    <CardsHoverComplete title="Windows 10/11" description="Get all the performance with your latest generation GAMER PC" linkCard="/windows" />
+  </motion.div>
+  
+    )
+
+}
+
+
+const GalleryMassonry = () => {
+
+  
+  const toRigth = useAnimation();
+  const Opacity = useAnimation();
+  const toLeft = useAnimation();
+  const opacityAndScale = useAnimation();
+  const opacityC1 = useAnimation();
+  const opacityC2 = useAnimation();
+  const opacityC3 = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView ) {
+      toRigth.start("toRigth");
+      Opacity.start("visible");
+      toLeft.start("toLeft");
+      opacityAndScale.start("opacityAndScale");
+      opacityC1.start("opacityC1");
+      opacityC2.start("opacityC2");
+      opacityC3.start("opacityC3");
+    }
+  }, [toRigth, Opacity, toLeft, opacityAndScale, opacityC1, opacityC2, opacityC3, inView]);
+  return(
+    <motion.div
+     ref={ref}
+     animate={opacityAndScale}
+     initial="hidden"
+     variants={opacityAndScaleVariants}
+  >
+    <MyWrapper/>
+  </motion.div>
+  
+    )
+
+}
+
+
+
 
 
 const HomePage = () => {
@@ -263,11 +336,10 @@ const HomePage = () => {
   const opacityC1 = useAnimation();
   const opacityC2 = useAnimation();
   const opacityC3 = useAnimation();
-
   const [ref, inView] = useInView();
 
   useEffect(() => {
-    if (inView) {
+    if (inView ) {
       toRigth.start("toRigth");
       Opacity.start("visible");
       toLeft.start("toLeft");
@@ -287,73 +359,70 @@ const HomePage = () => {
   return (
 
     <motion.div
-     initial={{opacity:0}}
-     animate={{opacity:1}}
-     exit={{opacity:0}}
-     transition={{ duration: 1.5 }}
-
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
     >
-
       <Page>
-        <SliderHome /> 
-         <div className='container-cards-complete' style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
-              <CardsHoverComplete title="Xbox One Series S/X" description="An unforgettable experience, live with XBOX ONE Series S/X" linkCard="/xbox-one"/>
-              <CardsHoverComplete title="Playstation 4/5"  description="Next Generation Graphics, Only in PLAYSTATION" linkCard="/playstation"/>
-              <CardsHoverComplete title="Windows 10/11"  description="Get all the performance with your latest generation GAMER PC" linkCard="/windows" />
-              </div>
+        <SliderHome />
+        <CardsHome />
         <div className="div-cards">
-       </div> 
-         <History /> 
-         <div className='sliding-text-infinite'>
-        <div class="marquee">
-                <span>FUTURE - TIME - DESTINY - CHOOSE - LIVE &nbsp;&nbsp;&nbsp;</span>
-            </div>
-            <div class="marquee marquee2">
-                <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
-            </div>
-        </div>   
-         <div className='text-center' style={{ marginBottom: "40px" }}>
+        </div>
+        <History />
+        <div className='sliding-text-infinite'>
+          <div class="marquee">
+            <span>FUTURE - TIME - DESTINY - CHOOSE - LIVE &nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="marquee marquee2">
+            <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+          </div>
+        </div>
+        <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
+      
+          
             className='st-title st-title-graphics'>Latest Generation Graphics
           </motion.h1>
-        </div> 
-         < div style={{marginBottom:"10%" }}>
-          <MyGallery  images={imagesGallerySliderHome} />
-        </div> 
+        </div>
+        < div style={{ marginBottom: "10%" }}>
+          <MyGallery images={imagesGallerySliderHome} />
+        </div>
 
-         <Gameplay /> 
-         <motion.div
-          ref={ref}
-          animate={Opacity}
-          initial="hidden"
-          variants={opacityVariants}
+        <Gameplay />
 
-        >
-        
-        </motion.div> 
       </Page>
-       <div className='sliding-text-infinite' style={{marginBottom:"-50px"}}>
+      <div className='sliding-text-infinite' style={{ marginBottom: "-50px" }}>
         <div class="marquee">
-                <span>BEST RATED GAME OF 2020 &nbsp;&nbsp;&nbsp;</span>
-            </div>
-            <div class="marquee marquee2">
-                <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
-            </div>
-        </div>   
-       <div style={{padding: "4vw"}}>
-      <div className='text-center' style={{ marginBottom: "40px" }}>
+          <span>BEST RATED GAME OF 2020 &nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="marquee marquee2">
+          <span>This is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+        </div>
+      </div>
+      <div style={{ padding: "4vw" }}>
+        <div className='text-center' style={{ marginBottom: "40px" }}>
           <motion.h1
             className='st-title st-title-graphics'>A Game Of The Year
           </motion.h1>
-        </div> 
-       <MyWrapper /> 
-      </div>
-     <div style={{background:"orange",paddingTop:"45px", display:"flex",justifyContent:"space-evenly", height:"150px", marginRight:"3%", marginLeft:"3%", marginBottom:"3%", borderRadius:"6px",boxShadow:"0px 0px 10px 1px orange"}}>
-      <h1 className='st-tittle-discount' style={{color:"white"}}>¡Get a Unique Discount!</h1>
-      <div className='container-button-discount' style={{float:"right"}}>
-                  <a className='' href="#"><span>¡Get Discount Now!</span></a>
-                </div>                          
-       </div> 
+        </div>
+        <GalleryMassonry />
+       </div>
+      <motion.div 
+      style={{ background: "orange", paddingTop: "45px", 
+      display: "flex", justifyContent: "space-evenly", height: "150px", marginRight: "3%",
+      marginLeft: "3%", marginBottom: "3%", borderRadius: "6px", boxShadow: "0px 0px 10px 1px orange" }}
+      ref={ref}
+      animate={opacityAndScale}
+      initial="hidden"
+      variants={opacityAndScaleVariants}
+
+       >
+        <h1 className='st-tittle-discount' style={{ color: "white" }}>¡Get a Unique Discount!</h1>
+        <div className='container-button-discount' style={{ float: "right" }}>
+          <a className='' href="#"><span>¡Get Discount Now!</span></a>
+        </div>
+      </motion.div>
     </motion.div>
 
   );

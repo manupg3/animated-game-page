@@ -20,7 +20,7 @@ const TitlePage = ({titulo}) => {
                  scale:1,
                   
              }}
-             transition={{ duration: 3,type: "spring" ,ease:'easeInOut'}}
+             transition={{ duration: 3,type: "spring" ,ease:'easeInOut', delay: 1.6}}
                
            >{titulo}</motion.h1>
         </div>
