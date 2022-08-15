@@ -34,7 +34,9 @@ function SliderHome() {
         />
         <Carousel.Caption>
         <motion.div
-    //  
+            animate={toRigth}
+            initial="hidden"
+            variants={toRigthVariants}
           >
         <div className='container-button'>
           <a className='' href="#"><span>¡Go to Shop!</span></a>

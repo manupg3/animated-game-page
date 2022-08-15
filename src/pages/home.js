@@ -33,8 +33,8 @@ const imagesGallerySliderHome = [
 
 
 const toRigthVariants = {
-  toRigth: { x: 0, transition: { duration: 2, type: "spring", ease: 'easeInOut', delay: 0.2 }, opacity: 1 },
-  hidden: { x: -30, opacity: 0 }
+  toRigth: { x: 0, transition: { duration: 4, type: "spring", ease: 'easeInOut', delay: 0.2 }, opacity: 1 },
+  hidden: { x: -40, opacity: 0 }
 };
 
 const toLeftVariants = {
@@ -63,7 +63,7 @@ const opacityVariants = {
 const opacityAndScaleVariants = {
   opacityAndScale: { opacity: 1, scale: 1, transition: { duration: 2, type: "spring", ease: 'easeInOut' } },
   hidden: { scale: 0.5, opacity: 0 }
-}
+} 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -323,6 +323,31 @@ const GalleryMassonry = () => {
 
 }
 
+const GallerySlider = () => {
+
+  
+  const toRigth = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView ) {
+      toRigth.start("toRigth");
+    }
+  }, [toRigth, inView]);
+  return(
+    <motion.div
+    style={{marginBottom:"10%"}}
+     ref={ref}
+     animate={toRigth}
+     initial="hidden"
+     variants={toRigthVariants}
+  >
+    <MyGallery images={imagesGallerySliderHome}/>
+  </motion.div>
+  
+    )
+
+}
 
 
 
@@ -385,9 +410,8 @@ const HomePage = () => {
             className='st-title st-title-graphics'>Latest Generation Graphics
           </motion.h1>
         </div>
-        < div style={{ marginBottom: "10%" }}>
-          <MyGallery images={imagesGallerySliderHome} />
-        </div>
+  
+          <GallerySlider />
 
         <Gameplay />
 
