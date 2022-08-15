@@ -141,7 +141,7 @@ const History = () => {
                 animate={Opacity}
                 initial="hidden"
                 variants={opacityVariants}
-                className='st-text'>We optimize all the processes of your business, leading to an intrinsic increase in all the value statistics of your business.</motion.p>
+                className='st-text'>A unique story, the path is decided by you, destiny is not written, but the end is, save us all.</motion.p>
               <motion.div
                 ref={ref}
                 animate={Opacity}
@@ -225,7 +225,7 @@ const Gameplay = () => {
                 animate={Opacity}
                 initial="hidden"
                 variants={opacityVariants}
-                className='st-text'>We optimize all the processes of your business, leading to an intrinsic increase in all the value statistics of your business.</motion.p>
+                className='st-text'>A revolutionary game mechanics, a form of combat never seen before. Enjoy it.</motion.p>
               <motion.div
                 ref={ref}
                 animate={Opacity}
