@@ -49,13 +49,23 @@
 
 @media screen and (max-width:1000px){
     .about-section{
-        background-size: 100%;
+        background-size: cover;
         padding: 100px 40px;
     }
     .inner-container{
         width: 100%;
         margin-right: 0px;
 
+    }
+}
+@media screen and (max-width:767px){
+    .about-section{
+        background-size: cover;
+        padding: 150px 0;
+    }
+    .inner-container{
+        padding: 30px;
+        margin: 50px;
     }
 }
 

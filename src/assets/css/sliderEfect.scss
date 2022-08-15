@@ -7,7 +7,7 @@ $poppins: 'Poppins', sans-serif;
  background-size: cover;
   position: relative;
   display: flex;
-  align-items: center;
+    align-items: center;
   justify-content: left;
   height: 400px;
   width: 100%;
@@ -220,6 +220,8 @@ $poppins: 'Poppins', sans-serif;
   }
   .hero{
     height: 200px;
+    margin-top: 85px;
+
   }
   .hero .overlay .content{
     height: 298px;
