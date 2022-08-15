@@ -272,9 +272,9 @@ const CardsHome = () => {
     <motion.div className='container-cards-complete'
     style={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
     ref={ref}
-    animate={opacityAndScale}
+    animate={opacityC1}
     initial="hidden"
-    variants={opacityAndScaleVariants}
+    variants={opacitycard1Variants}
   >
     <CardsHoverComplete title="Xbox One Series S/X" description="An unforgettable experience, live with XBOX ONE Series S/X" linkCard="/xbox-one" />
     <CardsHoverComplete title="Playstation 4/5" description="Next Generation Graphics, Only in PLAYSTATION" linkCard="/playstation" />
@@ -366,7 +366,7 @@ const HomePage = () => {
     >
       <Page>
         <SliderHome />
-        <CardsHome />
+        <CardsHome /> 
         <div className="div-cards">
         </div>
         <History />

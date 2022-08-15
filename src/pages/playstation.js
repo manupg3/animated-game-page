@@ -39,7 +39,8 @@ const PlaystationPage = () => {
 
 const subtitle = "Trailer In HD.";
 
-              
+                
+
     return (
 
       <motion.div
@@ -59,15 +60,19 @@ const subtitle = "Trailer In HD.";
   </div>
 </section> 
             
-                       <TituloPage titulo="PLAYSTATION.">
+                       <TituloPage titulo="PLAYSTATION."> 
              </TituloPage> 
-               <div className='text-center div-subtitle-page'>
+                <div className='text-center div-subtitle-page'>
               <CardsPlatforms logo1={ps4Logo} logo2={ps5Logo} title1="Adapted To PS4" title2="Created For PS5" description1="Try the experience with the best graphic quality adapted to PS4." description2="Get the next-gen graphics experience only on PS5."/>
-         <SubtitlePage  subtitulo={subtitle} />       
-      </div> 
+      </div>        
+      <div style={{textAlign: "center"}}>        
+      
+      <SubtitlePage  subtitulo={subtitle} />          
+       </div>        
+      
                <div style={{paddingLeft:"4%", paddingRight:"4%", paddingBottom:"3%"}}>
               <YoutubeEmbed embedId="ruY1eT9bXiw" />
-              </div> *
+              </div> 
           
             </Page>
         </motion.div>

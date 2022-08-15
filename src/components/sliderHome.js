@@ -7,8 +7,8 @@ import { useAnimation, motion } from "framer-motion";
 
 const toRigthVariants = {
   toRigth: { x: 0, transition: { duration: 2, type: 
-  "spring", ease: 'easeInOut', delay: 1.7 }, opacity: 1 },
-  hidden: {  opacity: 0 }
+  "spring", ease: 'easeInOut', delay: 1.8 }, opacity: 1 },
+  hidden: { x: -30, opacity: 0 }
 };
 
 
@@ -34,7 +34,7 @@ function SliderHome() {
         />
         <Carousel.Caption>
         <motion.div
-   
+    //  
           >
         <div className='container-button'>
           <a className='' href="#"><span>¡Go to Shop!</span></a>
